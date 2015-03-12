@@ -1,0 +1,510 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Tue Dec 09 16:54:03 2014
+# Process ID: 5672
+# Log file: C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.runs/icon_rom_synth_1/icon_rom.vds
+# Journal file: C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.runs/icon_rom_synth_1\vivado.jou
+#-----------------------------------------------------------
+source icon_rom.tcl
+# set_param gui.test TreeTableDev
+# set_param xicom.use_bs_reader 1
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7a100tcsg324-1
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
+# set_property webtalk.parent_dir C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.cache/wt [current_project]
+# set_property parent.project_path C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# read_ip C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/icon_rom.xci
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.4/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'icon_rom' generated file not found 'c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/icon_rom.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'icon_rom' generated file not found 'c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/icon_rom_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'icon_rom' generated file not found 'c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/icon_rom_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'icon_rom' generated file not found 'c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/icon_rom_funcsim.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'icon_rom' generated file not found 'c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/icon_rom_funcsim.vhdl'. Please regenerate to continue.
+# set_property used_in_implementation false [get_files -all c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/icon_rom.dcp]
+# set_property is_locked true [get_files C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/icon_rom.xci]
+# read_xdc dont_touch.xdc
+# set_property used_in_implementation false [get_files dont_touch.xdc]
+# catch { write_hwdef -file icon_rom.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top icon_rom -part xc7a100tcsg324-1 -mode out_of_context
+Command: synth_design -top icon_rom -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 236.090 ; gain = 73.023
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'icon_rom' [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/synth/icon_rom.vhd:67]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 240 - type: integer 
+	Parameter C_HAS_CLK bound to: 1 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 1 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 0 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: icon_rom.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 8 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0' declared at 'c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:130' bound to instance 'U0' of component 'dist_mem_gen_v8_0' [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/synth/icon_rom.vhd:133]
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_v8_0__parameterized0' [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:186]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 240 - type: integer 
+	Parameter C_HAS_CLK bound to: 1 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 1 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 0 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: icon_rom.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 8 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_v8_0_synth' [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:2867]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 240 - type: integer 
+	Parameter C_HAS_CLK bound to: 1 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 1 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 0 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: icon_rom.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 8 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 0 - type: integer 
+	Parameter c_addr_width bound to: 8 - type: integer 
+	Parameter c_depth bound to: 240 - type: integer 
+	Parameter c_width bound to: 8 - type: integer 
+	Parameter c_default_data bound to: 0 - type: string 
+	Parameter c_mem_init_file bound to: icon_rom.mif - type: string 
+	Parameter c_elaboration_dir bound to: ./ - type: string 
+	Parameter c_read_mif bound to: 1 - type: integer 
+	Parameter c_reg_a_d_inputs bound to: 0 - type: integer 
+	Parameter c_has_clk bound to: 1 - type: integer 
+	Parameter c_has_qspo_ce bound to: 0 - type: integer 
+	Parameter c_has_qspo_rst bound to: 0 - type: integer 
+	Parameter c_has_qspo_srst bound to: 0 - type: integer 
+	Parameter c_has_spo bound to: 0 - type: integer 
+	Parameter c_has_qspo bound to: 1 - type: integer 
+	Parameter c_sync_enable bound to: 1 - type: integer 
+	Parameter c_parser_type bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'rom' declared at 'c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:523' bound to instance 'rom_inst' of component 'rom' [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:2888]
+INFO: [Synth 8-638] synthesizing module 'rom__parameterized0' [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:551]
+	Parameter c_addr_width bound to: 8 - type: integer 
+	Parameter c_depth bound to: 240 - type: integer 
+	Parameter c_width bound to: 8 - type: integer 
+	Parameter c_default_data bound to: 0 - type: string 
+	Parameter c_mem_init_file bound to: icon_rom.mif - type: string 
+	Parameter c_elaboration_dir bound to: ./ - type: string 
+	Parameter c_read_mif bound to: 1 - type: integer 
+	Parameter c_reg_a_d_inputs bound to: 0 - type: integer 
+	Parameter c_has_clk bound to: 1 - type: integer 
+	Parameter c_has_qspo_ce bound to: 0 - type: integer 
+	Parameter c_has_qspo_rst bound to: 0 - type: integer 
+	Parameter c_has_qspo_srst bound to: 0 - type: integer 
+	Parameter c_has_spo bound to: 0 - type: integer 
+	Parameter c_has_qspo bound to: 1 - type: integer 
+	Parameter c_sync_enable bound to: 1 - type: integer 
+	Parameter c_parser_type bound to: 0 - type: integer 
+INFO: [Synth 8-63] RTL assertion: "MIF file size does not match memory size.Remaining addresses in memory are padded with c_default_data." [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:678]
+INFO: [Synth 8-4472] Detected and applied attribute rom_style = distributed [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:745]
+WARNING: [Synth 8-3848] Net spo in module/entity rom__parameterized0 does not have driver. [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:547]
+INFO: [Synth 8-256] done synthesizing module 'rom__parameterized0' (1#1) [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:551]
+WARNING: [Synth 8-3848] Net dpo in module/entity dist_mem_gen_v8_0_synth does not have driver. [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:2859]
+WARNING: [Synth 8-3848] Net qdpo in module/entity dist_mem_gen_v8_0_synth does not have driver. [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:2861]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_v8_0_synth' (2#1) [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:2867]
+WARNING: [Synth 8-3848] Net gnd_bus in module/entity dist_mem_gen_v8_0__parameterized0 does not have driver. [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:214]
+WARNING: [Synth 8-3848] Net vcc in module/entity dist_mem_gen_v8_0__parameterized0 does not have driver. [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:215]
+WARNING: [Synth 8-3848] Net gnd in module/entity dist_mem_gen_v8_0__parameterized0 does not have driver. [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:213]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_v8_0__parameterized0' (3#1) [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:186]
+INFO: [Synth 8-256] done synthesizing module 'icon_rom' (4#1) [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/synth/icon_rom.vhd:67]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 282.773 ; gain = 119.707
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[7] to constant 0 [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[6] to constant 0 [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[5] to constant 0 [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[4] to constant 0 [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[3] to constant 0 [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[2] to constant 0 [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[1] to constant 0 [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[0] to constant 0 [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :dpra[7] to constant 0 [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :dpra[6] to constant 0 [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :dpra[5] to constant 0 [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :dpra[4] to constant 0 [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :dpra[3] to constant 0 [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :dpra[2] to constant 0 [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :dpra[1] to constant 0 [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :dpra[0] to constant 0 [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :we to constant 0 [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :i_ce to constant 0 [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :qspo_ce to constant 0 [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :qdpo_ce to constant 0 [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :qdpo_clk to constant 0 [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :qspo_rst to constant 0 [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :qdpo_rst to constant 0 [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :qspo_srst to constant 0 [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :qdpo_srst to constant 0 [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 282.773 ; gain = 119.707
+---------------------------------------------------------------------------------
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/icon_rom_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/icon_rom_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.runs/icon_rom_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.runs/icon_rom_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 537.410 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 537.410 ; gain = 374.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 537.410 ; gain = 374.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.runs/icon_rom_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 537.410 ; gain = 374.344
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3848] Net spo in module/entity rom__parameterized0 does not have driver. [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:547]
+WARNING: [Synth 8-3848] Net dpo in module/entity dist_mem_gen_v8_0_synth does not have driver. [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:2859]
+WARNING: [Synth 8-3848] Net qdpo in module/entity dist_mem_gen_v8_0_synth does not have driver. [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:2861]
+WARNING: [Synth 8-3848] Net gnd_bus in module/entity dist_mem_gen_v8_0__parameterized0 does not have driver. [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:214]
+WARNING: [Synth 8-3848] Net vcc in module/entity dist_mem_gen_v8_0__parameterized0 does not have driver. [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:215]
+WARNING: [Synth 8-3848] Net gnd in module/entity dist_mem_gen_v8_0__parameterized0 does not have driver. [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:213]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 537.410 ; gain = 374.344
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module icon_rom 
+Detailed RTL Component Info : 
+Module rom__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module dist_mem_gen_v8_0_synth 
+Detailed RTL Component Info : 
+Module dist_mem_gen_v8_0__parameterized0 
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 537.410 ; gain = 374.344
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 537.410 ; gain = 374.344
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 537.410 ; gain = 374.344
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 537.410 ; gain = 374.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 537.410 ; gain = 374.344
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 537.410 ; gain = 374.344
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 537.410 ; gain = 374.344
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 538.117 ; gain = 375.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 538.117 ; gain = 375.051
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 546.992 ; gain = 383.926
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 546.992 ; gain = 383.926
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 546.992 ; gain = 383.926
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 546.992 ; gain = 383.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT6 |    40|
+|2     |FDRE |     8|
++------+-----+------+
+
+Report Instance Areas: 
++------+----------------------------------+----------------------------------+------+
+|      |Instance                          |Module                            |Cells |
++------+----------------------------------+----------------------------------+------+
+|1     |top                               |                                  |    48|
+|2     |  U0                              |dist_mem_gen_v8_0__parameterized0 |    48|
+|3     |    \synth_options.dist_mem_inst  |dist_mem_gen_v8_0_synth           |    48|
+|4     |      \gen_rom.rom_inst           |rom__parameterized0               |    48|
++------+----------------------------------+----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 546.992 ; gain = 383.926
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 546.992 ; gain = 102.875
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 546.992 ; gain = 383.926
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/icon_rom_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/icon_rom_ooc.xdc] for cell 'U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+20 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 560.156 ; gain = 370.676
+# rename_ref -prefix_all icon_rom_
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+# write_checkpoint -noxdef icon_rom.dcp
+# catch { report_utilization -file icon_rom_utilization_synth.rpt -pb icon_rom_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 560.156 ; gain = 0.000
+# if { [catch {
+#   file copy -force C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.runs/icon_rom_synth_1/icon_rom.dcp C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/icon_rom.dcp
+# } _RESULT ] } { 
+#   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
+# }
+# if { [catch {
+#   write_verilog -force -mode synth_stub C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/icon_rom_stub.v
+# } _RESULT ] } { 
+#   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
+# }
+# if { [catch {
+#   write_vhdl -force -mode synth_stub C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/icon_rom_stub.vhdl
+# } _RESULT ] } { 
+#   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
+# }
+# if { [catch {
+#   write_verilog -force -mode funcsim C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/icon_rom_funcsim.v
+# } _RESULT ] } { 
+#   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
+# }
+# if { [catch {
+#   write_vhdl -force -mode funcsim C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon_rom_1/icon_rom_funcsim.vhdl
+# } _RESULT ] } { 
+#   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
+# }
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 09 16:54:28 2014...

@@ -1,0 +1,92 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Tue Dec 09 13:28:13 2014
+# Process ID: 11224
+# Log file: C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.runs/synth_1/Nexys4fpga.vds
+# Journal file: C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Nexys4fpga.tcl
+# set_param gui.test TreeTableDev
+# set_param xicom.use_bs_reader 1
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7a100tcsg324-1
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.cache/wt [current_project]
+# set_property parent.project_path C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# add_files -quiet C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.runs/icon_rom_synth_1/icon_rom.dcp
+# set_property used_in_implementation false [get_files C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.runs/icon_rom_synth_1/icon_rom.dcp]
+# add_files -quiet C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.runs/clk_wizard_synth_1/clk_wizard.dcp
+# set_property used_in_implementation false [get_files C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.runs/clk_wizard_synth_1/clk_wizard.dcp]
+# add_files -quiet C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.runs/maze_memory_synth_1/maze_memory.dcp
+# set_property used_in_implementation false [get_files C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.runs/maze_memory_synth_1/maze_memory.dcp]
+# add_files -quiet C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.runs/success_synth_1/success.dcp
+# set_property used_in_implementation false [get_files C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.runs/success_synth_1/success.dcp]
+# read_verilog -library xil_defaultlib {
+#   C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/sevensegment.v
+#   C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/map.v
+#   C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/dtg.v
+#   C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/nexys4fpga_with_vga_no_accel.v
+#   C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/ball_vid_buttons.v
+#   C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/debounce.v
+#   C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon.v
+#   C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/vga_subsystem.v
+#   C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/colorizer.v
+#   C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/accel_threshold_ticker.v
+#   C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/ball.v
+#   C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/score.v
+#   C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/draw_success.v
+# }
+# read_vhdl -library xil_defaultlib {
+#   C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/SPI_If.vhd
+#   C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/AccelerometerCtl.vhd
+#   C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/AccelArithmetics.vhd
+#   C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/ADXL362Ctrl.vhd
+# }
+# read_xdc C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/nexys4fpga_withvideo.xdc
+# set_property used_in_implementation false [get_files C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/nexys4fpga_withvideo.xdc]
+# catch { write_hwdef -file Nexys4fpga.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top Nexys4fpga -part xc7a100tcsg324-1
+Command: synth_design -top Nexys4fpga -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+ERROR: [Synth 8-1031] speed_3 is not declared [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/accel_threshold_ticker.v:123]
+ERROR: [Synth 8-1031] speed_4 is not declared [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/accel_threshold_ticker.v:126]
+INFO: [Synth 8-2350] module accel_threshold_ticker ignored due to previous errors [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/accel_threshold_ticker.v:23]
+Failed to read verilog 'C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/accel_threshold_ticker.v'
+    while executing
+"rt::read_verilog {
+      ./.Xil/Vivado-11224-BeepBoop/realtime/icon_rom_stub.v
+      ./.Xil/Vivado-11224-BeepBoop/realtime/clk_wizard_stub.v
+      ./...."
+    invoked from within
+"if {$rt::useElabCache == false} {
+      rt::read_verilog {
+      ./.Xil/Vivado-11224-BeepBoop/realtime/icon_rom_stub.v
+      ./.Xil/Vivado-11224-BeepB..."
+    ("uplevel" body line 22)
+    invoked from within
+"uplevel #0 {
+    set ::env(BUILTIN_SYNTH) true
+    source $::env(HRT_TCL_PATH)/rtSynthPrep.tcl
+    rt::HARTNDb_resetJobStats
+    rt::HARTNDb_startJobS..."
+INFO: [Common 17-83] Releasing license: Synthesis
+3 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+
+    while executing
+"source -notrace {./.Xil/Vivado-11224-BeepBoop/realtime\Nexys4fpga.tcl}"
+    invoked from within
+"synth_design -top Nexys4fpga -part xc7a100tcsg324-1"
+    (file "Nexys4fpga.tcl" line 51)
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 09 13:28:17 2014...

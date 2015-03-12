@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator P.49d
+# Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.49d
+DATE            08/05/2013 - 17:42
+SOURCE          D:\Digilent\Projects\Nexys4\Nexys4_BIST_Release_Images\Nexys4_B1_BIST_Images_05_08_2013\Nexys4_BIST_User_Demo.mcs
+DEVICE          16384K
+DATA_WIDTH      4
+FILL_DATA       0xFF
+SIGNATURE       0xC929BD71
+START_ADDRESS   0x00000000 END_ADDRESS 0x003A607B DIRECTION_UP   "D:/Digilent/Projects/Nexys4/Nexys4_BIST_Release_Images/Nexys4_B1_BIST_Images_05_08_2013/download.bit" 7a100tcsg324

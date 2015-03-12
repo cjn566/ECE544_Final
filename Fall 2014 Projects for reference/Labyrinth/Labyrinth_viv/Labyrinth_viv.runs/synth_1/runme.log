@@ -1,0 +1,1087 @@
+
+*** Running vivado
+    with args -log Nexys4fpga.vds -m64 -mode batch -messageDb vivado.pb -source Nexys4fpga.tcl
+
+
+****** Vivado v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source Nexys4fpga.tcl
+# set_param gui.test TreeTableDev
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7a100tcsg324-1
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.cache/wt [current_project]
+# set_property parent.project_path C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# add_files c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/image_stuff/ball.coe
+# add_files c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/image_stuff/labyrinth02.coe
+# add_files c:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/image_stuff/success00.coe
+# add_files -quiet C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.runs/icon_rom_synth_1/icon_rom.dcp
+# set_property used_in_implementation false [get_files C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.runs/icon_rom_synth_1/icon_rom.dcp]
+# add_files -quiet C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.runs/clk_wizard_synth_1/clk_wizard.dcp
+# set_property used_in_implementation false [get_files C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.runs/clk_wizard_synth_1/clk_wizard.dcp]
+# add_files -quiet C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.runs/maze_memory_synth_1/maze_memory.dcp
+# set_property used_in_implementation false [get_files C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.runs/maze_memory_synth_1/maze_memory.dcp]
+# add_files -quiet C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.runs/success_synth_1/success.dcp
+# set_property used_in_implementation false [get_files C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.runs/success_synth_1/success.dcp]
+# read_verilog -library xil_defaultlib {
+#   C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/sevensegment.v
+#   C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/map.v
+#   C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/dtg.v
+#   C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/nexys4fpga_with_vga_no_accel.v
+#   C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/ball_vid_buttons.v
+#   C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/debounce.v
+#   C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon.v
+#   C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/vga_subsystem.v
+#   C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/colorizer.v
+#   C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/accel_threshold_ticker.v
+#   C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/score.v
+#   C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/draw_success.v
+# }
+# read_vhdl -library xil_defaultlib {
+#   C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/SPI_If.vhd
+#   C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/AccelerometerCtl.vhd
+#   C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/AccelArithmetics.vhd
+#   C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/ADXL362Ctrl.vhd
+# }
+# read_xdc C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/nexys4fpga_withvideo.xdc
+# set_property used_in_implementation false [get_files C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/nexys4fpga_withvideo.xdc]
+# catch { write_hwdef -file Nexys4fpga.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top Nexys4fpga -part xc7a100tcsg324-1
+Command: synth_design -top Nexys4fpga -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 231.453 ; gain = 67.984
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Nexys4fpga' [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/nexys4fpga_with_vga_no_accel.v:9]
+	Parameter SIMULATE bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'debounce' [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/debounce.v:24]
+	Parameter CLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter DEBOUNCE_FREQUENCY_HZ bound to: 250 - type: integer 
+	Parameter RESET_POLARITY_LOW bound to: 1 - type: integer 
+	Parameter CNTR_WIDTH bound to: 32 - type: integer 
+	Parameter SIMULATE bound to: 0 - type: integer 
+	Parameter SIMULATE_FREQUENCY_CNT bound to: 5 - type: integer 
+	Parameter pb0_in bound to: 4'b0001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/debounce.v:102]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/debounce.v:103]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/debounce.v:104]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/debounce.v:105]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/debounce.v:106]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/debounce.v:107]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/debounce.v:110]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/debounce.v:111]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/debounce.v:112]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/debounce.v:113]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/debounce.v:114]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/debounce.v:115]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/debounce.v:116]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/debounce.v:117]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/debounce.v:118]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/debounce.v:119]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/debounce.v:120]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/debounce.v:121]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/debounce.v:122]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/debounce.v:123]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/debounce.v:124]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/debounce.v:125]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (1#1) [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/debounce.v:24]
+INFO: [Synth 8-638] synthesizing module 'sevensegment' [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/sevensegment.v:35]
+	Parameter CLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter REFRESH_FREQUENCY_HZ bound to: 500 - type: integer 
+	Parameter RESET_POLARITY_LOW bound to: 1 - type: integer 
+	Parameter CNTR_WIDTH bound to: 32 - type: integer 
+	Parameter SIMULATE bound to: 0 - type: integer 
+	Parameter SIMULATE_FREQUENCY_CNT bound to: 5 - type: integer 
+	Parameter digit1 bound to: 8'b11111110 
+	Parameter digit2 bound to: 8'b11111101 
+	Parameter digit3 bound to: 8'b11111011 
+	Parameter digit4 bound to: 8'b11110111 
+	Parameter digit5 bound to: 8'b11101111 
+	Parameter digit6 bound to: 8'b11011111 
+	Parameter digit7 bound to: 8'b10111111 
+	Parameter digit8 bound to: 8'b01111111 
+INFO: [Synth 8-638] synthesizing module 'Digit' [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/sevensegment.v:196]
+	Parameter zero bound to: 7'b1000000 
+	Parameter one bound to: 7'b1111001 
+	Parameter two bound to: 7'b0100100 
+	Parameter three bound to: 7'b0110000 
+	Parameter four bound to: 7'b0011001 
+	Parameter five bound to: 7'b0010010 
+	Parameter six bound to: 7'b0000010 
+	Parameter seven bound to: 7'b1111000 
+	Parameter eight bound to: 7'b0000000 
+	Parameter nine bound to: 7'b0010000 
+	Parameter A bound to: 7'b0001000 
+	Parameter B bound to: 7'b0000011 
+	Parameter C bound to: 7'b1000110 
+	Parameter D bound to: 7'b0100001 
+	Parameter E bound to: 7'b0000110 
+	Parameter F bound to: 7'b0001110 
+	Parameter seg_a bound to: 7'b1111110 
+	Parameter seg_b bound to: 7'b1111101 
+	Parameter seg_c bound to: 7'b1111011 
+	Parameter seg_d bound to: 7'b1110111 
+	Parameter seg_e bound to: 7'b1101111 
+	Parameter seg_f bound to: 7'b1011111 
+	Parameter seg_g bound to: 7'b0111111 
+	Parameter upH bound to: 7'b0001001 
+	Parameter upL bound to: 7'b1000111 
+	Parameter upR bound to: 7'b0001000 
+	Parameter lol bound to: 7'b1001111 
+	Parameter lor bound to: 7'b0101111 
+	Parameter blank bound to: 7'b1111111 
+INFO: [Synth 8-256] done synthesizing module 'Digit' (2#1) [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/sevensegment.v:196]
+INFO: [Synth 8-256] done synthesizing module 'sevensegment' (3#1) [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/sevensegment.v:35]
+INFO: [Synth 8-638] synthesizing module 'AccelerometerCtl' [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/AccelerometerCtl.vhd:70]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
+	Parameter NUM_READS_AVG bound to: 16 - type: integer 
+	Parameter UPDATE_FREQUENCY_HZ bound to: 100 - type: integer 
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
+	Parameter NUM_READS_AVG bound to: 16 - type: integer 
+	Parameter UPDATE_FREQUENCY_HZ bound to: 100 - type: integer 
+INFO: [Synth 8-3491] module 'ADXL362Ctrl' declared at 'C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/ADXL362Ctrl.vhd:89' bound to instance 'ADXL_Control' of component 'ADXL362Ctrl' [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/AccelerometerCtl.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'ADXL362Ctrl__parameterized0' [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/ADXL362Ctrl.vhd:117]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
+	Parameter NUM_READS_AVG bound to: 16 - type: integer 
+	Parameter UPDATE_FREQUENCY_HZ bound to: 100 - type: integer 
+INFO: [Synth 8-4472] Detected and applied attribute fsm_encoding = USER [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/ADXL362Ctrl.vhd:283]
+INFO: [Synth 8-4472] Detected and applied attribute fsm_encoding = USER [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/ADXL362Ctrl.vhd:312]
+INFO: [Synth 8-4472] Detected and applied attribute fsm_encoding = USER [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/ADXL362Ctrl.vhd:365]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
+INFO: [Synth 8-3491] module 'SPI_If' declared at 'C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/SPI_If.vhd:42' bound to instance 'SPI_Interface' of component 'SPI_If' [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/ADXL362Ctrl.vhd:373]
+INFO: [Synth 8-638] synthesizing module 'SPI_If__parameterized0' [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/SPI_If.vhd:66]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
+INFO: [Synth 8-4472] Detected and applied attribute fsm_encoding = USER [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/SPI_If.vhd:113]
+INFO: [Synth 8-256] done synthesizing module 'SPI_If__parameterized0' (4#1) [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/SPI_If.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'ADXL362Ctrl__parameterized0' (5#1) [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/ADXL362Ctrl.vhd:117]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter ACC_X_Y_MAX bound to: 10'b0111111111 
+	Parameter ACC_X_Y_MIN bound to: 10'b0000000000 
+INFO: [Synth 8-3491] module 'AccelArithmetics' declared at 'C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/AccelArithmetics.vhd:49' bound to instance 'Accel_Calculation' of component 'AccelArithmetics' [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/AccelerometerCtl.vhd:190]
+INFO: [Synth 8-638] synthesizing module 'AccelArithmetics__parameterized0' [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/AccelArithmetics.vhd:74]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter ACC_X_Y_MAX bound to: 10'b0111111111 
+	Parameter ACC_X_Y_MIN bound to: 10'b0000000000 
+INFO: [Synth 8-637] synthesizing blackbox instance 'Magnitude_Calculation' of component 'Square_Root' [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/AccelArithmetics.vhd:229]
+INFO: [Synth 8-256] done synthesizing module 'AccelArithmetics__parameterized0' (6#1) [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/AccelArithmetics.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'AccelerometerCtl' (7#1) [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/AccelerometerCtl.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'vga_subsystem' [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/vga_subsystem.v:10]
+INFO: [Synth 8-638] synthesizing module 'clk_wizard' [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.runs/synth_1/.Xil/Vivado-10000-BeepBoop/realtime/clk_wizard_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'clk_wizard' (8#1) [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.runs/synth_1/.Xil/Vivado-10000-BeepBoop/realtime/clk_wizard_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'dtg' [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/dtg.v:29]
+	Parameter HORIZ_PIXELS bound to: 640 - type: integer 
+	Parameter HCNT_MAX bound to: 799 - type: integer 
+	Parameter HCNT_END bound to: 699 - type: integer 
+	Parameter HSYNC_START bound to: 659 - type: integer 
+	Parameter HSYNC_END bound to: 755 - type: integer 
+	Parameter VERT_PIXELS bound to: 480 - type: integer 
+	Parameter VCNT_MAX bound to: 524 - type: integer 
+	Parameter VSYNC_START bound to: 493 - type: integer 
+	Parameter VSYNC_END bound to: 494 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dtg' (9#1) [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/dtg.v:29]
+INFO: [Synth 8-638] synthesizing module 'colorizer' [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/colorizer.v:10]
+	Parameter BLACK bound to: 12'b000000000000 
+	Parameter TRANSPARENT bound to: 8'b00000000 
+INFO: [Synth 8-256] done synthesizing module 'colorizer' (10#1) [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/colorizer.v:10]
+INFO: [Synth 8-638] synthesizing module 'draw_icon' [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon.v:9]
+	Parameter ICON_WIDTH bound to: 15 - type: integer 
+	Parameter ICON_HEIGHT bound to: 15 - type: integer 
+	Parameter X_OFFSET bound to: 7 - type: integer 
+	Parameter Y_OFFSET bound to: 7 - type: integer 
+	Parameter BLANK bound to: 226 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'icon_rom' [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.runs/synth_1/.Xil/Vivado-10000-BeepBoop/realtime/icon_rom_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'icon_rom' (11#1) [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.runs/synth_1/.Xil/Vivado-10000-BeepBoop/realtime/icon_rom_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'draw_icon' (12#1) [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon.v:9]
+INFO: [Synth 8-638] synthesizing module 'draw_success' [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/draw_success.v:10]
+	Parameter ICON_WIDTH bound to: 240 - type: integer 
+	Parameter ICON_HEIGHT bound to: 240 - type: integer 
+	Parameter X_OFFSET bound to: 200 - type: integer 
+	Parameter Y_OFFSET bound to: 120 - type: integer 
+	Parameter BLANK bound to: 57601 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'success' [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.runs/synth_1/.Xil/Vivado-10000-BeepBoop/realtime/success_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'success' (13#1) [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.runs/synth_1/.Xil/Vivado-10000-BeepBoop/realtime/success_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'draw_success' (14#1) [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/draw_success.v:10]
+INFO: [Synth 8-256] done synthesizing module 'vga_subsystem' (15#1) [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/vga_subsystem.v:10]
+INFO: [Synth 8-638] synthesizing module 'Ball' [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/ball_vid_buttons.v:9]
+	Parameter CLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter UPDATE_FREQUENCY_HZ bound to: 30 - type: integer 
+	Parameter RESET_POLARITY_LOW bound to: 0 - type: integer 
+	Parameter CNTR_WIDTH bound to: 32 - type: integer 
+	Parameter SIMULATE bound to: 0 - type: integer 
+	Parameter SIMULATE_FREQUENCY_CNT bound to: 5 - type: integer 
+	Parameter INITIAL_X bound to: 527 - type: integer 
+	Parameter INITIAL_Y bound to: 254 - type: integer 
+	Parameter WIN_X bound to: 314 - type: integer 
+	Parameter WIN_Y bound to: 48 - type: integer 
+	Parameter NUM_PX_TO_CHECK bound to: 15 - type: integer 
+	Parameter OFFSET bound to: 8 - type: integer 
+	Parameter WALL bound to: 8'b00100110 
+	Parameter HOLE bound to: 8'b01001001 
+	Parameter WIN bound to: 8'b11111001 
+	Parameter READ_DELAY bound to: 3 - type: integer 
+	Parameter UP bound to: 4'b0001 
+	Parameter DOWN bound to: 4'b0010 
+	Parameter LEFT bound to: 4'b0100 
+	Parameter RIGHT bound to: 4'b1000 
+	Parameter YES bound to: 1'b1 
+	Parameter NO bound to: 1'b0 
+INFO: [Synth 8-638] synthesizing module 'map' [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/map.v:9]
+	Parameter PORT_A_ENABLE bound to: 1 - type: integer 
+	Parameter PORT_B_ENABLE bound to: 1 - type: integer 
+	Parameter MAP_WIDTH bound to: 320 - type: integer 
+	Parameter MAP_HEIGHT bound to: 240 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'maze_memory' [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.runs/synth_1/.Xil/Vivado-10000-BeepBoop/realtime/maze_memory_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'maze_memory' (16#1) [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.runs/synth_1/.Xil/Vivado-10000-BeepBoop/realtime/maze_memory_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'map' (17#1) [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/map.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/ball_vid_buttons.v:89]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/ball_vid_buttons.v:128]
+INFO: [Synth 8-256] done synthesizing module 'Ball' (18#1) [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/ball_vid_buttons.v:9]
+INFO: [Synth 8-638] synthesizing module 'accel_threshold_ticker' [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/accel_threshold_ticker.v:23]
+	Parameter MIN_THRESH bound to: 12 - type: integer 
+	Parameter THRESH_2 bound to: 20 - type: integer 
+	Parameter THRESH_3 bound to: 28 - type: integer 
+	Parameter THRESH_4 bound to: 40 - type: integer 
+	Parameter FREQ_1 bound to: 7 - type: integer 
+	Parameter FREQ_2 bound to: 23 - type: integer 
+	Parameter FREQ_3 bound to: 47 - type: integer 
+	Parameter FREQ_4 bound to: 95 - type: integer 
+	Parameter MHZ bound to: 100000000 - type: integer 
+	Parameter top_1 bound to: 14285713 - type: integer 
+	Parameter top_2 bound to: 4347825 - type: integer 
+	Parameter top_3 bound to: 2127658 - type: integer 
+	Parameter top_4 bound to: 1052630 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'accel_threshold_ticker' (19#1) [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/accel_threshold_ticker.v:23]
+INFO: [Synth 8-638] synthesizing module 'high_score' [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/score.v:10]
+	Parameter CLK_FREQ bound to: 100000000 - type: integer 
+	Parameter TICK_RATE bound to: 10 - type: integer 
+	Parameter TICK_HIT bound to: 9999999 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'high_score' (20#1) [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/score.v:10]
+WARNING: [Synth 8-3848] Net decpts in module/entity Nexys4fpga does not have driver. [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/nexys4fpga_with_vga_no_accel.v:63]
+INFO: [Synth 8-256] done synthesizing module 'Nexys4fpga' (21#1) [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/nexys4fpga_with_vga_no_accel.v:9]
+WARNING: [Synth 8-3917] design Nexys4fpga has port JA[5] driven by constant 0
+WARNING: [Synth 8-3917] design Nexys4fpga has port JA[4] driven by constant 0
+WARNING: [Synth 8-3917] design Nexys4fpga has port JA[3] driven by constant 0
+WARNING: [Synth 8-3917] design Nexys4fpga has port JA[2] driven by constant 0
+WARNING: [Synth 8-3917] design Nexys4fpga has port JA[1] driven by constant 0
+WARNING: [Synth 8-3917] design Nexys4fpga has port JA[0] driven by constant 0
+WARNING: [Synth 8-3331] design Nexys4fpga has unconnected port aclInt1
+WARNING: [Synth 8-3331] design Nexys4fpga has unconnected port aclInt2
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 268.199 ; gain = 104.730
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin SSB:dp[7] to constant 0 [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/nexys4fpga_with_vga_no_accel.v:119]
+WARNING: [Synth 8-3295] tying undriven pin SSB:dp[6] to constant 0 [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/nexys4fpga_with_vga_no_accel.v:119]
+WARNING: [Synth 8-3295] tying undriven pin SSB:dp[5] to constant 0 [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/nexys4fpga_with_vga_no_accel.v:119]
+WARNING: [Synth 8-3295] tying undriven pin SSB:dp[4] to constant 0 [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/nexys4fpga_with_vga_no_accel.v:119]
+WARNING: [Synth 8-3295] tying undriven pin SSB:dp[3] to constant 0 [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/nexys4fpga_with_vga_no_accel.v:119]
+WARNING: [Synth 8-3295] tying undriven pin SSB:dp[2] to constant 0 [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/nexys4fpga_with_vga_no_accel.v:119]
+WARNING: [Synth 8-3295] tying undriven pin SSB:dp[1] to constant 0 [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/nexys4fpga_with_vga_no_accel.v:119]
+WARNING: [Synth 8-3295] tying undriven pin SSB:dp[0] to constant 0 [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/nexys4fpga_with_vga_no_accel.v:119]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 268.199 ; gain = 104.730
+---------------------------------------------------------------------------------
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.runs/synth_1/.Xil/Vivado-10000-BeepBoop/dcp_2/clk_wizard_in_context.xdc] for cell 'vga/clk_wiz'
+Finished Parsing XDC File [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.runs/synth_1/.Xil/Vivado-10000-BeepBoop/dcp_2/clk_wizard_in_context.xdc] for cell 'vga/clk_wiz'
+Parsing XDC File [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/nexys4fpga_withvideo.xdc]
+Finished Parsing XDC File [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/nexys4fpga_withvideo.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 588.160 ; gain = 0.102
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 588.160 ; gain = 424.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 588.160 ; gain = 424.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth_viv/Labyrinth_viv.runs/synth_1/.Xil/Vivado-10000-BeepBoop/dcp_2/clk_wizard_in_context.xdc, line 3).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 588.160 ; gain = 424.691
+---------------------------------------------------------------------------------
+ROM "db_count" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "shift_pb0" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "pbtn_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "pbtn_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "pbtn_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "pbtn_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "pbtn_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "pbtn_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+INFO: [Synth 8-802] inferred FSM for state register 'an_reg' in module 'sevensegment'
+ROM "clk_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "an" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "an" won't be mapped to RAM because it is too sparse.
+ROM "SCLK_2X_TICK" won't be mapped to RAM because it is too sparse.
+ROM "StN" won't be mapped to RAM because it is too sparse.
+ROM "StN_Spi_Trans" won't be mapped to RAM because it is too sparse.
+ROM "Cnt_SS_Inactive_done" won't be mapped to RAM because it is too sparse.
+ROM "Cnt_Num_Reads_Done" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "Sample_Rate_Tick" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "Cmd_Reg_Addr_Done" won't be mapped to Block RAM because address size (2) smaller than threshold (5) 
+ROM "RESET_INT" won't be mapped to RAM because it is too sparse.
+ROM "pixel_row" won't be mapped to RAM because it is too sparse.
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon.v:32]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon.v:31]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon.v:32]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon.v:31]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon.v:32]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/icon.v:31]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/ball_vid_buttons.v:89]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/ball_vid_buttons.v:89]
+ROM "y_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "x_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "rom_read_delay" won't be mapped to Block RAM because address size (2) smaller than threshold (5) 
+ROM "check_px" won't be mapped to RAM because it is too sparse.
+ROM "x_move_check_addr" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "x_thresh_level" won't be mapped to Block RAM because address size (1) smaller than threshold (5) 
+ROM "y_thresh_level" won't be mapped to Block RAM because address size (1) smaller than threshold (5) 
+ROM "tick" won't be mapped to RAM because address size (27) is larger than maximum supported(18) 
+INFO: [Synth 8-3354] encoded FSM with state register 'an_reg' using encoding 'sequential' in module 'sevensegment'
+WARNING: [Synth 8-3848] Net decpts in module/entity Nexys4fpga does not have driver. [C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/nexys4fpga_with_vga_no_accel.v:63]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 588.160 ; gain = 424.691
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 6     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 4     
+	   2 Input     10 Bit       Adders := 12    
+	   3 Input     10 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 6     
+	               27 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               13 Bit    Registers := 2     
+	               12 Bit    Registers := 5     
+	               10 Bit    Registers := 11    
+	                8 Bit    Registers := 26    
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 27    
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 21    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input     27 Bit        Muxes := 1     
+	   6 Input     24 Bit        Muxes := 2     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input     13 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 3     
+	  10 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 13    
+	   6 Input     10 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 14    
+	   2 Input      7 Bit        Muxes := 3     
+	   8 Input      7 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 7     
+	   6 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 7     
+	   2 Input      2 Bit        Muxes := 11    
+	   3 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 59    
+	   3 Input      1 Bit        Muxes := 25    
+	   5 Input      1 Bit        Muxes := 4     
+	   8 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Nexys4fpga 
+Detailed RTL Component Info : 
+Module debounce 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 22    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 22    
+Module Digit 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module sevensegment 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 2     
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module SPI_If__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 4     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+Module ADXL362Ctrl__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               20 Bit    Registers := 1     
+	               12 Bit    Registers := 5     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 11    
+	                7 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	  10 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   6 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 9     
+	   2 Input      7 Bit        Muxes := 3     
+	   8 Input      7 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 17    
+	   8 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+Module AccelArithmetics__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 4     
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               13 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 6     
+Module AccelerometerCtl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module dtg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module colorizer 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+Module draw_icon 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input      8 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module draw_success 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+Module vga_subsystem 
+Detailed RTL Component Info : 
+Module map 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 4     
+Module Ball 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 6     
+	   3 Input     10 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 5     
+	   3 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 22    
+	   3 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 3     
+Module accel_threshold_ticker 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	               24 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   6 Input     24 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 6     
+	   6 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 12    
+Module high_score 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 588.160 ; gain = 424.691
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+ROM "swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "swtch_db" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "db_count" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "shift_pb0" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "clk_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "an" won't be mapped to RAM because address size (32) is larger than maximum supported(18) 
+ROM "ADXL_Control/Cnt_Num_Reads_Done" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "ADXL_Control/SPI_Interface/SCLK_2X_TICK" won't be mapped to RAM because it is too sparse.
+ROM "ADXL_Control/SPI_Interface/StN" won't be mapped to RAM because it is too sparse.
+ROM "ADXL_Control/Sample_Rate_Tick" won't be mapped to RAM because address size (20) is larger than maximum supported(18) 
+ROM "ADXL_Control/Cnt_SS_Inactive_done" won't be mapped to RAM because it is too sparse.
+ROM "ADXL_Control/StN_Spi_Trans" won't be mapped to RAM because it is too sparse.
+ROM "RESET_INT" won't be mapped to RAM because it is too sparse.
+DSP Report: Generating DSP Accel_Calculation/ACCEL_Y_SQUARE_reg, operation Mode is: (A2*B2)'.
+DSP Report: register ADXL_Control/ACCEL_Y_reg is absorbed into DSP Accel_Calculation/ACCEL_Y_SQUARE_reg.
+DSP Report: register ADXL_Control/ACCEL_Y_reg is absorbed into DSP Accel_Calculation/ACCEL_Y_SQUARE_reg.
+DSP Report: register Accel_Calculation/ACCEL_Y_SQUARE_reg is absorbed into DSP Accel_Calculation/ACCEL_Y_SQUARE_reg.
+DSP Report: operator Accel_Calculation/multOp is absorbed into DSP Accel_Calculation/ACCEL_Y_SQUARE_reg.
+DSP Report: Generating DSP Accel_Calculation/ACCEL_Z_SQUARE_reg, operation Mode is: (A2*B2)'.
+DSP Report: register ADXL_Control/ACCEL_Z_reg is absorbed into DSP Accel_Calculation/ACCEL_Z_SQUARE_reg.
+DSP Report: register ADXL_Control/ACCEL_Z_reg is absorbed into DSP Accel_Calculation/ACCEL_Z_SQUARE_reg.
+DSP Report: register Accel_Calculation/ACCEL_Z_SQUARE_reg is absorbed into DSP Accel_Calculation/ACCEL_Z_SQUARE_reg.
+DSP Report: operator Accel_Calculation/multOp is absorbed into DSP Accel_Calculation/ACCEL_Z_SQUARE_reg.
+DSP Report: Generating DSP Accel_Calculation/ACCEL_X_SQUARE_reg, operation Mode is: (A2*B2)'.
+DSP Report: register ADXL_Control/ACCEL_X_reg is absorbed into DSP Accel_Calculation/ACCEL_X_SQUARE_reg.
+DSP Report: register ADXL_Control/ACCEL_X_reg is absorbed into DSP Accel_Calculation/ACCEL_X_SQUARE_reg.
+DSP Report: register Accel_Calculation/ACCEL_X_SQUARE_reg is absorbed into DSP Accel_Calculation/ACCEL_X_SQUARE_reg.
+DSP Report: operator Accel_Calculation/multOp is absorbed into DSP Accel_Calculation/ACCEL_X_SQUARE_reg.
+ROM "dtg/pixel_row" won't be mapped to RAM because it is too sparse.
+DSP Report: Generating DSP img/addr1, operation Mode is: A*(B:0xf0).
+DSP Report: operator img/addr1 is absorbed into DSP img/addr1.
+DSP Report: Generating DSP img/addr0, operation Mode is: PCIN+(A:0x0):B2+(C:0xffffffffff38).
+DSP Report: register dtg/pixel_column_reg is absorbed into DSP img/addr0.
+DSP Report: operator img/addr0 is absorbed into DSP img/addr0.
+ROM "check_px" won't be mapped to RAM because it is too sparse.
+ROM "p_0_out" won't be mapped to RAM because it is too sparse.
+ROM "p_0_out" won't be mapped to RAM because it is too sparse.
+ROM "p_0_out" won't be mapped to RAM because it is too sparse.
+ROM "myscore/tick" won't be mapped to RAM because address size (27) is larger than maximum supported(18) 
+WARNING: [Synth 8-3917] design Nexys4fpga has port JA[5] driven by constant 0
+WARNING: [Synth 8-3917] design Nexys4fpga has port JA[4] driven by constant 0
+WARNING: [Synth 8-3917] design Nexys4fpga has port JA[3] driven by constant 0
+WARNING: [Synth 8-3917] design Nexys4fpga has port JA[2] driven by constant 0
+WARNING: [Synth 8-3917] design Nexys4fpga has port JA[1] driven by constant 0
+WARNING: [Synth 8-3917] design Nexys4fpga has port JA[0] driven by constant 0
+WARNING: [Synth 8-3331] design Nexys4fpga has unconnected port aclInt1
+WARNING: [Synth 8-3331] design Nexys4fpga has unconnected port aclInt2
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 588.160 ; gain = 424.691
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 588.160 ; gain = 424.691
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+ Sort Area is null Accel_Calculation/ACCEL_X_SQUARE_reg_0 : 0 0 : 1100 1100 : Used 1 time 0
+ Sort Area is null Accel_Calculation/ACCEL_Y_SQUARE_reg_3 : 0 0 : 1100 1100 : Used 1 time 0
+ Sort Area is null Accel_Calculation/ACCEL_Z_SQUARE_reg_2 : 0 0 : 1100 1100 : Used 1 time 0
+ Sort Area is null img/addr1_4 : 0 0 : 310 390 : Used 1 time 0
+ Sort Area is null img/addr1_4 : 0 1 : 80 390 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP:
++-----------------+------------------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name      | DSP Mapping                        | Neg Edge Clk | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------+------------------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|AccelerometerCtl | (A2*B2)'                           | No           | 12     | 12     | 48     | 25     | 24     | 1    | 1    | 1    | 1    | 1     | 1    | 0    | 
+|AccelerometerCtl | (A2*B2)'                           | No           | 12     | 12     | 48     | 25     | 24     | 1    | 1    | 1    | 1    | 1     | 1    | 0    | 
+|AccelerometerCtl | (A2*B2)'                           | No           | 12     | 12     | 48     | 25     | 24     | 1    | 1    | 1    | 1    | 1     | 1    | 0    | 
+|draw_success     | A*(B:0xf0)                         | No           | 16     | 8      | 48     | 25     | 24     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|vga_subsystem    | PCIN+(A:0x0):B2+(C:0xffffffffff38) | No           | 30     | 10     | 9      | -1     | -1     | 0    | 1    | 0    | 1    | 1     | 0    | 0    | 
++-----------------+------------------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table shows DSPs generated at current stage. Some DSP generation could be reversed due to later optimizations. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\accelCtl/ADXL_Control/Cmd_Reg_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ticker/new_top_X_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ticker/new_top_Y_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\accelCtl/ADXL_Control/Cmd_Reg_reg[1][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SSB/Digit3/seg_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\SSB/Digit2/seg_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ticker/top_cnt_X_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ticker/top_cnt_Y_reg[31] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\SSB/seg_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_pb1_reg[3] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_pb1_reg[2] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_pb1_reg[1] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_pb1_reg[0] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_pb2_reg[3] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_pb2_reg[2] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_pb2_reg[1] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_pb2_reg[0] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_pb3_reg[3] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_pb3_reg[2] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_pb3_reg[1] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_pb3_reg[0] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_pb4_reg[3] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_pb4_reg[2] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_pb4_reg[1] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_pb4_reg[0] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_pb5_reg[3] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_pb5_reg[2] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_pb5_reg[1] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_pb5_reg[0] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/pbtn_db_reg[5] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/pbtn_db_reg[4] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/pbtn_db_reg[3] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/pbtn_db_reg[2] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/pbtn_db_reg[1] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch0_reg[3] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch0_reg[2] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch0_reg[1] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch0_reg[0] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch1_reg[3] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch1_reg[2] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch1_reg[1] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch1_reg[0] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch2_reg[3] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch2_reg[2] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch2_reg[1] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch2_reg[0] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch3_reg[3] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch3_reg[2] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch3_reg[1] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch3_reg[0] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch4_reg[3] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch4_reg[2] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch4_reg[1] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch4_reg[0] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch5_reg[3] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch5_reg[2] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch5_reg[1] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch5_reg[0] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch6_reg[3] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch6_reg[2] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch6_reg[1] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch6_reg[0] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch7_reg[3] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch7_reg[2] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch7_reg[1] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch7_reg[0] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch8_reg[3] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch8_reg[2] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch8_reg[1] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch8_reg[0] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch9_reg[3] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch9_reg[2] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch9_reg[1] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch9_reg[0] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch10_reg[3] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch10_reg[2] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch10_reg[1] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch10_reg[0] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch11_reg[3] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch11_reg[2] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch11_reg[1] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch11_reg[0] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch12_reg[3] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch12_reg[2] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch12_reg[1] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch12_reg[0] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch13_reg[3] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch13_reg[2] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch13_reg[1] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch13_reg[0] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch14_reg[3] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch14_reg[2] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch14_reg[1] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch14_reg[0] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch15_reg[3] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch15_reg[2] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch15_reg[1] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_swtch15_reg[0] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/swtch_db_reg[15] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/swtch_db_reg[14] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/swtch_db_reg[13] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/swtch_db_reg[12] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/swtch_db_reg[11] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/swtch_db_reg[10] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/swtch_db_reg[9] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/swtch_db_reg[8] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/swtch_db_reg[7] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/swtch_db_reg[6] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/swtch_db_reg[5] ) is unused and will be removed from module Nexys4fpga.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 588.160 ; gain = 424.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 588.160 ; gain = 424.691
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 588.160 ; gain = 424.691
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 588.160 ; gain = 424.691
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 612.316 ; gain = 448.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 621.285 ; gain = 457.816
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 639.262 ; gain = 475.793
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 639.262 ; gain = 475.793
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 639.262 ; gain = 475.793
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 639.262 ; gain = 475.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register:
++------------+------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                 | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Nexys4fpga  | accelCtl/ADXL_Control/Data_Reg_reg[2][6] | 3      | 6     | NO           | NO                 | YES               | 6      | 0       | 
++------------+------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |maze_memory   |         1|
+|2     |Square_Root   |         1|
+|3     |clk_wizard    |         1|
+|4     |icon_rom      |         1|
+|5     |success       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |Square_Root_bbox |     1|
+|2     |clk_wizard       |     1|
+|3     |icon_rom         |     1|
+|4     |maze_memory      |     1|
+|5     |success          |     1|
+|6     |BUFG             |     1|
+|7     |CARRY4           |   135|
+|8     |DSP48E1          |     3|
+|9     |DSP48E1_1        |     1|
+|10    |DSP48E1_2        |     1|
+|11    |LUT1             |   244|
+|12    |LUT2             |   368|
+|13    |LUT3             |   149|
+|14    |LUT4             |   129|
+|15    |LUT5             |   132|
+|16    |LUT6             |   242|
+|17    |MUXF7            |     4|
+|18    |SRL16E           |     6|
+|19    |FDRE             |   683|
+|20    |FDSE             |    19|
+|21    |IBUF             |     2|
+|22    |OBUF             |    57|
++------+-----------------+------+
+
+Report Instance Areas: 
++------+----------------------+---------------------------------+------+
+|      |Instance              |Module                           |Cells |
++------+----------------------+---------------------------------+------+
+|1     |top                   |                                 |  2227|
+|2     |  DB                  |debounce                         |    97|
+|3     |  SSB                 |sevensegment                     |   181|
+|4     |    Digit0            |Digit                            |     8|
+|5     |    Digit1            |Digit_0                          |     9|
+|6     |    Digit2            |Digit_1                          |     9|
+|7     |    Digit4            |Digit_2                          |    10|
+|8     |    Digit5            |Digit_3                          |     7|
+|9     |    Digit6            |Digit_4                          |     5|
+|10    |  aball               |Ball                             |   358|
+|11    |    amap              |map                              |   106|
+|12    |  accelCtl            |AccelerometerCtl                 |   985|
+|13    |    ADXL_Control      |ADXL362Ctrl__parameterized0      |   679|
+|14    |      SPI_Interface   |SPI_If__parameterized0           |    95|
+|15    |    Accel_Calculation |AccelArithmetics__parameterized0 |   282|
+|16    |  ticker              |accel_threshold_ticker           |   301|
+|17    |  vga                 |vga_subsystem                    |   199|
+|18    |    dtg               |dtg                              |   123|
+|19    |    icon              |draw_icon                        |    38|
+|20    |    img               |draw_success                     |    36|
++------+----------------------+---------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 639.262 ; gain = 475.793
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 293 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:26 . Memory (MB): peak = 639.262 ; gain = 132.688
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 639.262 ; gain = 475.793
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 142 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+106 Infos, 126 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 639.262 ; gain = 453.926
+# write_checkpoint -noxdef Nexys4fpga.dcp
+# catch { report_utilization -file Nexys4fpga_utilization_synth.rpt -pb Nexys4fpga_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 639.262 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 09 17:25:25 2014...

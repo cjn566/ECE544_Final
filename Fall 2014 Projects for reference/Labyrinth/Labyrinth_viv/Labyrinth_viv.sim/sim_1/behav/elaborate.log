@@ -1,0 +1,5 @@
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 0f5ebbbc409741c3afd666dda8212110 --debug typical --relax -L blk_mem_gen_v8_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ball_collision_test_behav xil_defaultlib.ball_collision_test xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 6 slave threads.
+ERROR: [XSIM 43-3225] Cannot find design unit xil_defaultlib.ball_collision_test in library work located at xsim.dir/work.

@@ -1,0 +1,96 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:24:04 MST 2014
+| Date         : Tue Dec 09 17:26:02 2014
+| Host         : BeepBoop running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file Nexys4fpga_control_sets_placed.rpt
+| Design       : Nexys4fpga
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    43 |
+| Minimum Number of register sites lost to control set restrictions |   131 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             111 |           48 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             209 |           63 |
+| Yes          | No                    | No                     |             135 |           48 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             198 |           79 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------------------+---------------------------------------------------------+----------------------------------------------------+------------------+----------------+
+|        Clock Signal        |                      Enable Signal                      |                  Set/Reset Signal                  | Slice Load Count | Bel Load Count |
++----------------------------+---------------------------------------------------------+----------------------------------------------------+------------------+----------------+
+|  clk_BUFG                  | SSB/n_0_FSM_sequential_an[3]_i_2                        | DB/O1                                              |                2 |              3 |
+|  clk_BUFG                  | aball/n_0_x_out[7]_i_2                                  | aball/amap/SS[0]                                   |                3 |              4 |
+|  clk_BUFG                  | DB/n_0_db_count[31]_i_1                                 |                                                    |                2 |              4 |
+|  clk_BUFG                  | accelCtl/ADXL_Control/Q[1]                              | accelCtl/ADXL_Control/Reset_Cnt_Num_Reads          |                1 |              4 |
+|  clk_BUFG                  | ticker/E[0]                                             | DB/O1                                              |                1 |              4 |
+|  clk_BUFG                  | accelCtl/ADXL_Control/n_0_Cmd_Reg[0][6]_i_2             | accelCtl/ADXL_Control/n_0_Cmd_Reg[0][6]_i_1        |                2 |              4 |
+|  clk_BUFG                  | aball/amap/E[0]                                         | aball/amap/SR[0]                                   |                1 |              4 |
+|  clk_BUFG                  | accelCtl/ADXL_Control/n_0_StC_Spi_Trans[9]_i_1          | accelCtl/n_0_RESET_INT_reg                         |                1 |              5 |
+|  clk_BUFG                  | aball/n_0_y_out[9]_i_1                                  | aball/amap/SS[0]                                   |                5 |              5 |
+|  clk_BUFG                  | aball/n_0_y_out[7]_i_1                                  | aball/amap/SS[1]                                   |                3 |              5 |
+|  clk_BUFG                  | accelCtl/ADXL_Control/n_0_Cmd_Reg[1][6]_i_2             | accelCtl/ADXL_Control/n_0_Cmd_Reg[1][6]_i_1        |                1 |              5 |
+|  clk_BUFG                  | accelCtl/ADXL_Control/SPI_Interface/n_0_StC[5]_i_1      | accelCtl/n_0_RESET_INT_reg                         |                3 |              6 |
+|  clk_BUFG                  | aball/n_0_x_out[9]_i_2                                  | aball/amap/SS[1]                                   |                4 |              6 |
+|  clk_BUFG                  |                                                         | accelCtl/ADXL_Control/SPI_Interface/SCLK_2X_DIV0   |                1 |              6 |
+|  clk_BUFG                  | accelCtl/ADXL_Control/n_0_Cmd_Reg[2][6]_i_2             | accelCtl/ADXL_Control/n_0_Cmd_Reg[2][6]_i_1        |                1 |              6 |
+|  clk_BUFG                  | accelCtl/ADXL_Control/SPI_Interface/n_0_MOSI_REG[6]_i_1 |                                                    |                1 |              6 |
+|  clk_BUFG                  | accelCtl/ADXL_Control/Shift_Cmd_Reg                     | accelCtl/n_0_RESET_INT_reg                         |                3 |              7 |
+|  clk_BUFG                  | accelCtl/ADXL_Control/SPI_Interface/E[0]                | accelCtl/n_0_RESET_INT_reg                         |                3 |              7 |
+|  clk_BUFG                  | accelCtl/ADXL_Control/SPI_Interface/EN_LOAD_DOUT        |                                                    |                4 |              8 |
+|  clk_BUFG                  | accelCtl/ADXL_Control/SPI_Interface/SHIFT_TICK_IN       |                                                    |                3 |              8 |
+|  clk_BUFG                  |                                                         | accelCtl/Accel_Calculation/n_0_ACCEL_X_CLIP[8]_i_1 |                4 |              9 |
+|  clk_BUFG                  |                                                         | accelCtl/Accel_Calculation/n_0_ACCEL_Y_CLIP[8]_i_1 |                2 |              9 |
+|  clk_BUFG                  |                                                         | accelCtl/ADXL_Control/Cnt_SS_Inactive0             |                3 |             10 |
+|  vga/clk_wiz/inst/clk_out1 | vga/dtg/n_0_pixel_row[9]_i_2                            | vga/dtg/n_0_pixel_row[9]_i_1                       |                5 |             10 |
+|  clk_BUFG                  | DB/O2                                                   | DB/O1                                              |                4 |             11 |
+|  clk_BUFG                  | accelCtl/ADXL_Control/n_0_StC_Adxl_Ctrl[11]_i_1         | accelCtl/n_0_RESET_INT_reg                         |               11 |             11 |
+|  clk_BUFG                  | ticker/n_0_new_top_X[23]_i_1                            |                                                    |                4 |             13 |
+|  clk_BUFG                  | ticker/n_0_new_top_Y[23]_i_1                            |                                                    |                3 |             13 |
+|  vga/clk_wiz/inst/clk_out1 |                                                         | DB/O1                                              |                8 |             13 |
+|  clk_BUFG                  | DB/O3                                                   | DB/O1                                              |                3 |             13 |
+|  clk_BUFG                  | DB/JA_OBUF[0]                                           |                                                    |                5 |             14 |
+|  clk_BUFG                  | aball/n_0_x_move_check_addr[9]_i_1                      |                                                    |               11 |             17 |
+|  vga/clk_wiz/inst/clk_out1 |                                                         |                                                    |               11 |             18 |
+|  clk_BUFG                  |                                                         | accelCtl/ADXL_Control/Reset_Sample_Rate_Div        |                5 |             20 |
+|  clk_BUFG                  | accelCtl/ADXL_Control/Data_Ready                        | accelCtl/n_0_RESET_INT_reg                         |                5 |             22 |
+|  clk_BUFG                  | accelCtl/ADXL_Control/Q[0]                              | accelCtl/n_0_RESET_INT_reg                         |                9 |             24 |
+|  clk_BUFG                  |                                                         | DB/n_0_db_count[31]_i_1                            |                8 |             31 |
+|  clk_BUFG                  |                                                         | DB/O2                                              |                8 |             32 |
+|  clk_BUFG                  |                                                         | DB/O3                                              |                8 |             32 |
+|  clk_BUFG                  | accelCtl/ADXL_Control/Q[1]                              | accelCtl/ADXL_Control/O1                           |                8 |             32 |
+|  clk_BUFG                  |                                                         | DB/O1                                              |               16 |             47 |
+|  clk_BUFG                  | accelCtl/ADXL_Control/SPI_Interface/Shift_Data_Reg      |                                                    |               16 |             58 |
+|  clk_BUFG                  |                                                         |                                                    |               37 |             93 |
++----------------------------+---------------------------------------------------------+----------------------------------------------------+------------------+----------------+
+
+

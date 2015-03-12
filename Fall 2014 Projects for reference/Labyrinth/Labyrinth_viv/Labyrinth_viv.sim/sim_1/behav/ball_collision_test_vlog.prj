@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+verilog blk_mem_gen_v8_2  "../../../../Labyrinth/accel/icon_rom/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v"
+verilog xil_defaultlib  "../../../../Labyrinth/accel/icon_rom/sim/icon_rom.v"
+verilog xil_defaultlib  "../../../../Labyrinth/accel/sevensegment.v"
+verilog xil_defaultlib  "../../../../Labyrinth/accel/map.v"
+verilog xil_defaultlib  "../../../../Labyrinth/accel/dtg.v"
+verilog xil_defaultlib  "../../../../Labyrinth/accel/nexys4fpga_with_vga_no_accel.v"
+verilog xil_defaultlib  "../../../../Labyrinth/accel/ball_vid_buttons.v"
+verilog xil_defaultlib  "../../../../Labyrinth/accel/debounce.v"
+verilog xil_defaultlib  "../../../../Labyrinth/accel/icon.v"
+verilog xil_defaultlib  "../../../../Labyrinth/accel/vga_subsystem.v"
+verilog xil_defaultlib  "../../../../Labyrinth/accel/colorizer.v"
+verilog xil_defaultlib  "../../../../Labyrinth/accel/clk_wizard/clk_wizard_clk_wiz.v"
+verilog xil_defaultlib  "../../../../Labyrinth/accel/clk_wizard/clk_wizard.v"
+verilog blk_mem_gen_v8_2  "../../../../Labyrinth/accel/maze_memory/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v"
+verilog xil_defaultlib  "../../../../Labyrinth/accel/maze_memory/sim/maze_memory.v"
+verilog xil_defaultlib  "../../../../Labyrinth/accel/Sim/ball_collision_test.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

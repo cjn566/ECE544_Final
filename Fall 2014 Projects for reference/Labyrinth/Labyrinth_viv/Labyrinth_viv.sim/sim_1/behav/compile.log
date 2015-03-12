@@ -1,0 +1,8 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/SPI_If.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SPI_If
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/AccelerometerCtl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity AccelerometerCtl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/AccelArithmetics.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity AccelArithmetics
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Colten/Dropbox/_SCHOOL/ECE_540_SoC_Design/Final_Project/Labyrinth/accel/ADXL362Ctrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ADXL362Ctrl
